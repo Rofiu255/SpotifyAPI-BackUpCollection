@@ -63,7 +63,27 @@
 					"mode": "raw",
 					"raw": "{\r\n    \"name\": \"New Playlist\",\r\n    \"description\": \"New playlist description\",\r\n    \"public\": false\r\n}"
 				},
-				"url": "https://api.spotify.com/v1/users/{{user_id}}/playlists"
+				"url": {
+					"raw": "https://api.spotify.com/v1/users/:user_id/playlists",
+					"protocol": "https",
+					"host": [
+						"api",
+						"spotify",
+						"com"
+					],
+					"path": [
+						"v1",
+						"users",
+						":user_id",
+						"playlists"
+					],
+					"variable": [
+						{
+							"key": "user_id",
+							"value": "{{user_id}}"
+						}
+					]
+				}
 			},
 			"response": []
 		},
