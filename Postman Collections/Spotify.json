@@ -24,7 +24,7 @@
 			"response": []
 		},
 		{
-			"name": "Get several browse categories",
+			"name": "Get several browsing categories",
 			"id": "7bd5fb49-d3d4-413e-8f78-63b1434ad9b6",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
