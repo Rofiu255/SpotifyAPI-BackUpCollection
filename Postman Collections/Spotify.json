@@ -7,25 +7,7 @@
 	"item": [
 		{
 			"name": "Get new-releases",
-			"_postman_id": "a749669a-e175-4269-bbda-6b58dd64ff9b",
-			"protocolProfileBehavior": {
-				"disableBodyPruning": true
-			},
-			"request": {
-				"method": "GET",
-				"header": [
-					{
-						"key": "Authorization",
-						"value": "Bearer 1POdFZRZbvb...qqillRxMr2z"
-					}
-				],
-				"url": "https://api.spotify.com/v1/browse/new-releases"
-			},
-			"response": []
-		},
-		{
-			"name": "Get new-releases Copy",
-			"_postman_id": "969fff09-375e-4a30-9ea0-bb4584a2582e",
+			"id": "a749669a-e175-4269-bbda-6b58dd64ff9b",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -43,7 +25,7 @@
 		},
 		{
 			"name": "Get several browse categories",
-			"_postman_id": "7bd5fb49-d3d4-413e-8f78-63b1434ad9b6",
+			"id": "7bd5fb49-d3d4-413e-8f78-63b1434ad9b6",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -61,7 +43,7 @@
 		},
 		{
 			"name": "Create a playlists",
-			"_postman_id": "477b3524-9228-48f4-bdf9-733155e31387",
+			"id": "477b3524-9228-48f4-bdf9-733155e31387",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -79,10 +61,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"name\": \"New Playlist\",\r\n    \"description\": \"New playlist description\",\r\n    \"public\": false\r\n}",
-					"options": {
-						"raw": {}
-					}
+					"raw": "{\r\n    \"name\": \"New Playlist\",\r\n    \"description\": \"New playlist description\",\r\n    \"public\": false\r\n}"
 				},
 				"url": "https://api.spotify.com/v1/users/{{user_id}}/playlists"
 			},
@@ -90,7 +69,7 @@
 		},
 		{
 			"name": "Add items to a playlist",
-			"_postman_id": "5a970f3f-8b97-48a1-9928-46331689fbd2",
+			"id": "5a970f3f-8b97-48a1-9928-46331689fbd2",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -108,10 +87,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"uris\": [\r\n        \"string\"\r\n    ],\r\n    \"position\": 0\r\n}",
-					"options": {
-						"raw": {}
-					}
+					"raw": "{\r\n    \"uris\": [\r\n        \"string\"\r\n    ],\r\n    \"position\": 0\r\n}"
 				},
 				"url": {
 					"raw": "https://api.spotify.com/v1/playlists/:playlist_id/tracks?uris=spotify:track:0YF4MF77Kw8CMkZkfDFtlj",
@@ -136,8 +112,7 @@
 					"variable": [
 						{
 							"key": "playlist_id",
-							"value": "0DzbFWyrb54RRl536yrcBB",
-							"type": "string"
+							"value": "0DzbFWyrb54RRl536yrcBB"
 						}
 					]
 				}
