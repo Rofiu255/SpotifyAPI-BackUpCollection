@@ -1,0 +1,25 @@
+iteration,collectionName,requestName,method,url,status,code,responseTime,responseSize,executed,failed,skipped,totalAssertions,executedCount,failedCount,skippedCount,body
+"1","Spotify","Get new-releases","GET","https://api.spotify.com/v1/browse/new-releases","Unauthorized","401","471","77",,,,"0","0","0","0","{
+  ""error"": {
+    ""status"": 401,
+    ""message"": ""Invalid access token""
+  }
+}"
+"1","Spotify","Get several browsing categories","GET","https://api.spotify.com/v1/browse/categories","Unauthorized","401","202","77",,,,"0","0","0","0","{
+  ""error"": {
+    ""status"": 401,
+    ""message"": ""Invalid access token""
+  }
+}"
+"1","Spotify","Create a playlists","POST","https://api.spotify.com/v1/users/{{user_id}}/playlists","Unauthorized","401","210","77",,,,"0","0","0","0","{
+  ""error"": {
+    ""status"": 401,
+    ""message"": ""Invalid access token""
+  }
+}"
+"1","Spotify","Add items to a playlist","POST","https://api.spotify.com/v1/playlists/0DzbFWyrb54RRl536yrcBB/tracks?uris=spotify:track:0YF4MF77Kw8CMkZkfDFtlj","Unauthorized","401","165","77",,,,"0","0","0","0","{
+  ""error"": {
+    ""status"": 401,
+    ""message"": ""Invalid access token""
+  }
+}"
